@@ -124,4 +124,21 @@ document.addEventListener('DOMContentLoaded', () => {
             lightbox.style.display = 'none';
         }
     });
+
+    window.addEventListener('keydown', (e) => {
+        if (lightbox.style.display === 'flex') {
+            if (e.key === 'ArrowLeft') {
+                // Left arrow key for previous image
+                currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+                showImage(currentImageIndex);
+            } else if (e.key === 'ArrowRight') {
+                // Right arrow key for next image
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                showImage(currentImageIndex);
+            } else if (e.key === 'Escape') {
+                // Escape key to close the lightbox
+                lightbox.style.display = 'none';
+            }
+        }
+    });
 });
