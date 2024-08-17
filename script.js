@@ -9,6 +9,17 @@ document.addEventListener('DOMContentLoaded', () => {
             arrow.style.transform = subSegment.style.display === 'block' ? 'rotate(90deg)' : 'rotate(0deg)';
         });
     });
+    // const sections = document.querySelectorAll('section > h2');
+    // sections.forEach(section => {
+    //     section.addEventListener('click', () => {
+    //         const subSegment = section.nextElementSibling;
+    //         const arrow = section.querySelector('.arrow');
+    //         const isVisible = subSegment.style.display === 'block';
+    //         subSegment.style.display = isVisible ? 'none' : 'block';
+    //         arrow.style.transform = isVisible ? 'rotate(0deg)' : 'rotate(90deg)';
+    //     });
+    // });
+
 
     // Lightbox for Image Gallery
     let currentImageIndex;
