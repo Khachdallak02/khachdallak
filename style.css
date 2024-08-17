@@ -55,6 +55,25 @@ h2 {
     animation: slideDown 0.5s ease forwards;
 }
 
+.arrow {
+    font-size: 24px;
+    color: black;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    margin-left: 10px;
+}
+
+/* .sub-segment {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+} */
+
+
+
+
 @keyframes slideDown {
     from {
         max-height: 0;
