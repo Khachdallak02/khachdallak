@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+section {
+    margin: 2rem;
+}
+
+h2 {
+    cursor: pointer;
+}
+
+.sub-segment {
+    display: none;
+    margin-top: 1rem;
+}
+
+.sub-segment img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.sub-segment img.expanded {
+    width: auto;
+    height: auto;
+}
